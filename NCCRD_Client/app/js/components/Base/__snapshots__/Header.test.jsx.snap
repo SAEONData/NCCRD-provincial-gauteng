@@ -1,0 +1,172 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header should render correctly with no props 1`] = `
+<Header>
+  <div
+    style={
+      Object {
+        "backgroundColor": "white",
+      }
+    }
+  >
+    <t
+      className="align-items-center"
+      style={
+        Object {
+          "height": 100,
+        }
+      }
+      tag="div"
+    >
+      <div
+        className="row align-items-center"
+        style={
+          Object {
+            "height": 100,
+          }
+        }
+      >
+        <t
+          className="d-none d-md-block"
+          lg={null}
+          md="2"
+          sm={null}
+          tag="div"
+          xl={null}
+          xs={null}
+        >
+          <div
+            className="col-md-2 d-none d-md-block"
+          >
+            <img
+              align="left"
+              onClick={[Function]}
+              src={
+                Object {
+                  "process": [Function],
+                }
+              }
+              style={
+                Object {
+                  "cursor": "pointer",
+                  "height": 80,
+                  "marginLeft": 5,
+                }
+              }
+            />
+          </div>
+        </t>
+        <t
+          lg={null}
+          md="1"
+          sm={null}
+          tag="div"
+          xl={null}
+          xs={null}
+        >
+          <div
+            className="col-md-1"
+          />
+        </t>
+        <t
+          lg={null}
+          md="6"
+          sm={null}
+          tag="div"
+          xl={null}
+          xs={null}
+        >
+          <div
+            className="col-md-6"
+          >
+            <div>
+              <h1
+                style={
+                  Object {
+                    "color": "#2e7d32",
+                    "letterSpacing": "2px",
+                    "textAlign": "center",
+                  }
+                }
+              >
+                <b>
+                  NCCRD
+                </b>
+                <sub
+                  style={
+                    Object {
+                      "backgroundColor": "#78e26c",
+                      "borderRadius": "5px",
+                      "fontSize": "18px",
+                      "padding": "2px",
+                    }
+                  }
+                >
+                  <i>
+                    BETA
+                  </i>
+                </sub>
+              </h1>
+              <p />
+              <h5
+                style={
+                  Object {
+                    "color": "grey",
+                    "letterSpacing": "2px",
+                    "marginTop": "-8px",
+                    "textAlign": "center",
+                  }
+                }
+              >
+                <b>
+                  National Climate Change Response Database
+                </b>
+              </h5>
+            </div>
+          </div>
+        </t>
+        <t
+          lg={null}
+          md="1"
+          sm={null}
+          tag="div"
+          xl={null}
+          xs={null}
+        >
+          <div
+            className="col-md-1"
+          />
+        </t>
+        <t
+          className="d-none d-md-block"
+          lg={null}
+          md="2"
+          sm={null}
+          tag="div"
+          xl={null}
+          xs={null}
+        >
+          <div
+            className="col-md-2 d-none d-md-block"
+          >
+            <img
+              align="right"
+              src={
+                Object {
+                  "process": [Function],
+                }
+              }
+              style={
+                Object {
+                  "height": 80,
+                  "marginRight": 5,
+                }
+              }
+            />
+          </div>
+        </t>
+      </div>
+    </t>
+  </div>
+</Header>
+`;
