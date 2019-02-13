@@ -77,7 +77,7 @@
       "./app/setupTests.js"
     ],
     "moduleNameMapper": {
-      ".+\\.(css|scss|png|jpg|ttf|woff|woff2)$": "jest-transform-stub"
+      ".+\\.(css|scss|png|jpg|gif|ttf|woff|woff2)$": "jest-transform-stub"
     }
   }
 }

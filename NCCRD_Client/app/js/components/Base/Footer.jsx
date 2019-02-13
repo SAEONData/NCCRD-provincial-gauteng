@@ -48,14 +48,15 @@ class Footer extends React.Component {
 
     let sections = []
 
-    for (let i = 0; i < 4; i++) {
-      let section = data.sections[i]
-      sections.push(
-        <Col key={`section_${i + 1}`} md="3">
-          <h4 style={{ marginBottom: "15px" }}><b>{section.text}</b></h4>
-          {this.renderLinks(section)}
-        </Col>
-      )
+    if (data.sections) {
+      data.sections.forEach(section => {
+        sections.push(
+          <Col key={`section_${section.text}`}>
+            <h4 style={{ marginBottom: "15px" }}><b>{section.text}</b></h4>
+            {this.renderLinks(section)}
+          </Col>
+        )
+      })
     }
 
     return sections
@@ -66,37 +67,38 @@ class Footer extends React.Component {
 
     let links = []
 
-    for (let i = 0; i < section.links.length; i++) {
-
-      let link = section.links[i]
-      if (link.text) {
-        links.push(
-          <div
-            key={`link_${i + 1}`}
-            style={{
-              cursor: link.link ? "pointer" : "default",
-              fontWeight: link.link ? "400" : "regular"
-            }}
-            onClick={() => {
-              if (link.link) {
-                this.toggleModal(true, link.text, link.link)
-              }
-            }}>
-            {link.text}
-          </div>
-        )
-      }
-      else if (link.src) {
-        links.push(
-          <img
-            key={`link_${i + 1}`}
-            src={link.src}
-            style={{
-              width: link.width,
-              cursor: link.link ? "pointer" : "default"
-            }} />
-        )
-      }
+    if (section.links) {
+      section.links.forEach(link => {
+        if (link.text) {
+          links.push(
+            <div
+              className="custom_link"
+              key={`link_${section.links.indexOf(link)}`}
+              style={{
+                cursor: link.link ? "pointer" : "default",
+                fontWeight: link.link ? "400" : "regular"
+              }}
+              onClick={() => {
+                if (link.link) {
+                  this.toggleModal(true, link.text, link.link)
+                }
+              }}>
+              {link.text}
+            </div>
+          )
+        }
+        else if (link.src) {
+          links.push(
+            <img
+              key={`link_${section.links.indexOf(link)}`}
+              src={link.src}
+              style={{
+                width: link.width,
+                cursor: link.link ? "pointer" : "default"
+              }} />
+          )
+        }
+      })
     }
 
     return links
@@ -104,7 +106,7 @@ class Footer extends React.Component {
 
   render() {
 
-    let { showModal, modalHeader, modalSrc, isNarrowDisplay } = this.state
+    let { showModal, modalHeader, modalSrc } = this.state
 
     return (
       <>
@@ -154,9 +156,6 @@ class Footer extends React.Component {
                 height: "500px",
                 margin: "0px",
                 border: "1px solid gainsboro",
-                // backgroundImage: `url(${loader})`,
-                // backgroundRepeat: "no-repeat",
-                // backgroundPosition: "50% 50%"
               }}
               src={modalSrc}
             />

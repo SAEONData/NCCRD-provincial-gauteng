@@ -1,0 +1,372 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer should render correctly with no props 1`] = `
+<Footer>
+  <div
+    style={
+      Object {
+        "backgroundColor": "white",
+        "borderLeft": "1px solid gainsboro",
+        "borderRight": "1px solid gainsboro",
+        "borderTop": "1px solid gainsboro",
+        "color": "black",
+        "padding": "5px 45px 5px 45px",
+      }
+    }
+  >
+    <br />
+    <t
+      tag="div"
+    >
+      <div
+        className="row"
+      >
+        <t
+          key="section_Technology"
+          lg={null}
+          md={null}
+          sm={null}
+          tag="div"
+          xl={null}
+          xs={null}
+        >
+          <div
+            className="col"
+          >
+            <h4
+              style={
+                Object {
+                  "marginBottom": "15px",
+                }
+              }
+            >
+              <b>
+                Technology
+              </b>
+            </h4>
+            <div
+              className="custom_link"
+              key="link_0"
+              onClick={[Function]}
+              style={
+                Object {
+                  "cursor": "default",
+                  "fontWeight": "regular",
+                }
+              }
+            >
+              DEA NCCRD uses open source, government funded facilities provided by SAEON. The DST and NRF funds the SAEON Open Data Platform (ODP) and associated portals. Developed by SAEON on behalf of DST, DEA, DRDLR, and other stakeholders.
+            </div>
+          </div>
+        </t>
+        <t
+          key="section_Legal"
+          lg={null}
+          md={null}
+          sm={null}
+          tag="div"
+          xl={null}
+          xs={null}
+        >
+          <div
+            className="col"
+          >
+            <h4
+              style={
+                Object {
+                  "marginBottom": "15px",
+                }
+              }
+            >
+              <b>
+                Legal
+              </b>
+            </h4>
+            <div
+              className="custom_link"
+              key="link_0"
+              onClick={[Function]}
+              style={
+                Object {
+                  "cursor": "pointer",
+                  "fontWeight": "400",
+                }
+              }
+            >
+              Disclaimer
+            </div>
+            <div
+              className="custom_link"
+              key="link_1"
+              onClick={[Function]}
+              style={
+                Object {
+                  "cursor": "pointer",
+                  "fontWeight": "400",
+                }
+              }
+            >
+              Terms and Conditions
+            </div>
+            <div
+              className="custom_link"
+              key="link_2"
+              onClick={[Function]}
+              style={
+                Object {
+                  "cursor": "pointer",
+                  "fontWeight": "400",
+                }
+              }
+            >
+              Data Licenses
+            </div>
+            <div
+              className="custom_link"
+              key="link_3"
+              onClick={[Function]}
+              style={
+                Object {
+                  "cursor": "pointer",
+                  "fontWeight": "400",
+                }
+              }
+            >
+              Privacy
+            </div>
+          </div>
+        </t>
+        <t
+          key="section_SAEON ODP"
+          lg={null}
+          md={null}
+          sm={null}
+          tag="div"
+          xl={null}
+          xs={null}
+        >
+          <div
+            className="col"
+          >
+            <h4
+              style={
+                Object {
+                  "marginBottom": "15px",
+                }
+              }
+            >
+              <b>
+                SAEON ODP
+              </b>
+            </h4>
+            <div
+              className="custom_link"
+              key="link_0"
+              onClick={[Function]}
+              style={
+                Object {
+                  "cursor": "pointer",
+                  "fontWeight": "400",
+                }
+              }
+            >
+              Open Data Platform
+            </div>
+            <div
+              className="custom_link"
+              key="link_1"
+              onClick={[Function]}
+              style={
+                Object {
+                  "cursor": "pointer",
+                  "fontWeight": "400",
+                }
+              }
+            >
+              Contribute
+            </div>
+            <div
+              className="custom_link"
+              key="link_2"
+              onClick={[Function]}
+              style={
+                Object {
+                  "cursor": "pointer",
+                  "fontWeight": "400",
+                }
+              }
+            >
+              Contact Us
+            </div>
+          </div>
+        </t>
+        <t
+          key="section_Funding"
+          lg={null}
+          md={null}
+          sm={null}
+          tag="div"
+          xl={null}
+          xs={null}
+        >
+          <div
+            className="col"
+          >
+            <h4
+              style={
+                Object {
+                  "marginBottom": "15px",
+                }
+              }
+            >
+              <b>
+                Funding
+              </b>
+            </h4>
+            <img
+              key="link_0"
+              src={
+                Object {
+                  "process": [Function],
+                }
+              }
+              style={
+                Object {
+                  "cursor": "default",
+                  "width": "100%",
+                }
+              }
+            />
+          </div>
+        </t>
+      </div>
+    </t>
+    <br />
+  </div>
+  <div
+    style={
+      Object {
+        "backgroundColor": "#8EAC85",
+        "color": "white",
+        "padding": "10px 45px 10px 45px",
+      }
+    }
+  >
+    <t
+      tag="div"
+    >
+      <div
+        className="row"
+      >
+        <t
+          lg={null}
+          md="12"
+          sm={null}
+          tag="div"
+          xl={null}
+          xs={null}
+        >
+          <div
+            className="col-md-12"
+          >
+            <b>
+              Created by
+              <span>
+                 
+                <a
+                  href="http://www.saeon.ac.za"
+                  style={
+                    Object {
+                      "color": "white",
+                    }
+                  }
+                  target="saeon"
+                >
+                  <strong>
+                    SAEON
+                  </strong>
+                </a>
+                 
+              </span>
+              using
+              <span>
+                 
+                <a
+                  href="https://reactjs.org/"
+                  style={
+                    Object {
+                      "color": "white",
+                    }
+                  }
+                  target="react"
+                >
+                  <strong>
+                    React
+                  </strong>
+                </a>
+                , 
+              </span>
+              <span>
+                 
+                <a
+                  href="https://mdbootstrap.com/react"
+                  style={
+                    Object {
+                      "color": "white",
+                    }
+                  }
+                  target="mdb"
+                >
+                  <strong>
+                     MDBootstrap
+                  </strong>
+                </a>
+                , 
+              </span>
+              <span>
+                 
+                <a
+                  href="https://ant.design/"
+                  style={
+                    Object {
+                      "color": "white",
+                    }
+                  }
+                  target="antdesign"
+                >
+                  <strong>
+                     Ant Design 
+                  </strong>
+                </a>
+                 
+              </span>
+              and SAEON Open Data Platform APIs.
+            </b>
+            <br />
+            Copyright © 
+            2019
+          </div>
+        </t>
+      </div>
+    </t>
+  </div>
+  <t
+    autoFocus={true}
+    backdrop={true}
+    backdropTransitionTimeout={150}
+    fade={true}
+    isOpen={false}
+    keyboard={true}
+    modalTransitionTimeout={300}
+    role="dialog"
+    size="fluid"
+    style={
+      Object {
+        "width": "95%",
+      }
+    }
+    toggle={[Function]}
+    zIndex={1050}
+  />
+</Footer>
+`;
