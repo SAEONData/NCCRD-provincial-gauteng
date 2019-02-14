@@ -143,7 +143,7 @@ class SideNav extends React.Component {
 
         <MSBSideNav hidden triggerOpening={isOpen} breakWidth={1300} className="white side-nav-light">
 
-          <div className="text-center" style={{ color: "black", marginBottom: "-5px" }}>
+          <div className="text-center header" style={{ color: "black", marginBottom: "-5px" }}>
             {data.logoTop &&
               <img src={data.logoTop.src} style={{ width: data.logoTop.width, marginTop: "15px" }} />
             }
@@ -157,7 +157,7 @@ class SideNav extends React.Component {
           </SideNavNav>
 
           <hr />
-          <div className="text-center">
+          <div className="text-center footer">
             {data.logoBottom &&
               <img src={data.logoBottom.src} style={{ width: data.logoBottom.width }} />
             }

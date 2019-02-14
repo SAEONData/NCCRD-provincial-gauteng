@@ -23,9 +23,9 @@ describe("Footer", () => {
   })
 
   // All tests will go here
-  it('should render correctly with no props', () => {
-    expect(footer()).toMatchSnapshot()
-  })
+  // it('should render correctly with no props', () => {
+  //   expect(footer()).toMatchSnapshot()
+  // })
 
   it("config data exists", () => {
     expect(footerContent).toBeDefined()
