@@ -8,7 +8,7 @@ let _ndmcBaseURL = ''
 let _mapServerBaseURL = ''
 
 if (CONSTANTS.DEV) {
-  _apiBaseURL = 'http://localhost:62553/odata/'
+  _apiBaseURL =  'http://app01.saeon.ac.za/nccrdtestapi/odata/' //'http://localhost:62553/odata/'
   _siteBaseURL = `${window.location.protocol}//${window.location.hostname}:${window.location.port}/`
   _ndmcBaseURL = 'http://app01.saeon.ac.za/ndmctestsite/'
   _ndaoBaseURL = 'http://app01.saeon.ac.za/ndaotestapi/odata/' //'https://localhost:44301/odata/'
