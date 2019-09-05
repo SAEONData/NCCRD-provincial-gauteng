@@ -1,7 +1,8 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { Row, Col, Button, Fa } from 'mdbreact'
-import { Collapse, Icon } from 'antd';
+import { Collapse, Icon } from 'antd'
+import { CSVLink } from 'react-csv'
 
 const Panel = Collapse.Panel;
 
@@ -216,6 +217,22 @@ class OverallSummaryStep extends React.Component {
           </Col>
           <Col>
             <div style={{ float: "right" }}>
+            <CSVLink
+              style={{ marginRight: '15px', textDecoration: 'underline', color: '#006532' }}
+              filename={`${projectDetails.ProjectTitle + '.csv'}`}
+              // headers = {
+              //   [{label: 'project-title', key: 'projectDetails.projectTitle'}]
+              // }
+              data={[projectDetails]}
+              asyncOnClick={true}
+              onClick={() => {
+                console.log(projectDetails.ProjectTitle)
+              }}
+            >
+              {/* <Fa icon="arrow-circle-down" style={{ marginRight: 15 }} /> */}
+              {/* <MDBIcon icon="arrow-circle-down" style={{ marginRight: 15 }} /> */}
+              Download
+            </CSVLink>
               <a
                 // href="#"
                 onClick={() => { this.setState({ activeKey: ["1", "2", "3", "4"] }) }}

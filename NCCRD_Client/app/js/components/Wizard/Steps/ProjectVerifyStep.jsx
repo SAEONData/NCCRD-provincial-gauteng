@@ -67,7 +67,7 @@ class ProjectVerifyStep extends React.Component {
             }
             {
               projectDetails.Verified === true &&
-              <Button className="btnVerify" color="white" size="sm" /*onClick={() => this.verify(false)}*/>
+              <Button className="btnVerify" color="white" size="sm" onClick={() => this.verify(false)}>
                 <table>
                   <tbody>
                     <tr>

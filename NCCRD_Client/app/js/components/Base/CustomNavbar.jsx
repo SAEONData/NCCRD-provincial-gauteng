@@ -15,7 +15,7 @@ import {
 } from 'mdbreact'
 import { notification, message } from 'antd'
 import userManager from '../Authentication/userManager'
-import { ssoBaseURL, ndaoSiteBaseURL, ndmcBaseURL } from '../../config/serviceURLs.js'
+import { ssoBaseURL, ndaoSiteBaseURL, ndmcBaseURL, nccisBaseURL } from '../../config/serviceURLs.js'
 import { DEAGreen } from '../../config/colours.js'
 import { data as NavData } from '../../../data/sideNavConfig'
 import { destroyFns } from 'antd/lib/modal/Modal';
@@ -169,10 +169,13 @@ class CustomNavbar extends React.Component {
                       Impacts:
                     </DropdownItem> */}
                   <DropdownItem href={ndaoSiteBaseURL} style={{ marginLeft: "7px" }}>
-                    <b style={{ color: "grey" }}>View Information</b>
+                    <b style={{ dropdownItemHoverBackgroundColor: DEAGreen }}>View Information</b>
                   </DropdownItem>
                   <DropdownItem href={ndaoSiteBaseURL + '#/ame/contribute'} style={{ marginLeft: "7px" }}>
-                    <b style={{ color: "grey" }}>Submit evaluation on Progress</b>
+                    <b style={{ color: "#0000000" }}>Submit evaluation on Progress</b>
+                  </DropdownItem>
+                  <DropdownItem href={nccisBaseURL} style={{ marginLeft: "7px" }}>
+                    <b style={{ color: "#0000000" }}>NCCIS</b>
                   </DropdownItem>
                 </DropdownMenu>
               </Dropdown>

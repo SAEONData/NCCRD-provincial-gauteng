@@ -3,6 +3,7 @@ import { Card, CardBody, CardText, CardTitle, Button, Fa } from 'mdbreact'
 import { connect } from 'react-redux'
 import { DEAGreen } from "../../../config/colours.js"
 import { notification } from 'antd'
+import { CSVLink } from 'react-csv'
 
 const _gf = require('../../../globalFunctions')
 
@@ -127,7 +128,7 @@ class ProjectCard extends React.Component {
 
   render() {
 
-    let { pdes, pid, user } = this.props
+    let { pdes, pid, user, projectDetails } = this.props
     let { favorite } = this.state
 
     if (pdes.length > 240) {
@@ -220,8 +221,58 @@ class ProjectCard extends React.Component {
               onClick={this.togleFavorite}
             >
               <Fa icon="star" size="lg" style={{ color: favorite ? "#fdd835" : "#D8D8D8", marginRight: "5px" }} />
-              Favorite
+              Favourite
           </Button>
+          }
+          {/* {
+            this.props.showListViewOption &&
+            <Button
+              size="sm"
+              color="white"
+              style={{
+                marginLeft:"0px",
+                boxShadow:"none",
+                border:"1px solid silver",
+                borderRadius:"5px",
+                padding:"3px 15px 3px 15px",
+                fontSize: "14px",
+                height: 33
+              }}
+              onClick={console.log('delete button works')}
+            >
+            <Fa icon="trash" size="lg" style={{ color: DEAGreen, marginRight: "5px" }} />
+              Delete
+            </Button>
+          } */}
+          {
+            this.props.showListViewOption && 
+            <Button
+              size="sm"
+              color="white"
+              style={{
+                marginLeft:"0px",
+                boxShadow:"none",
+                border:"1px solid silver",
+                borderRadius:"5px",
+                padding:"3px 15px 3px 15px",
+                fontSize: "14px",
+                height: 33
+              }}
+              onClick={this.onClick.bind(projectDetails)}
+            >
+            <Fa icon="download" size="lg" style={{ color: DEAGreen, marginRight: "5px" }} />
+            {/* <CSVLink
+             
+              filename={"project.csv"}
+              data={[this.props.projectDetails]}
+              asyncOnClick={true}
+              onClick={() => {
+                console.log(this.props.projectDetails)
+              }}
+            >            */}
+              Download
+            {/* </CSVLink> */}
+            </Button>
           }
 
         </CardBody>

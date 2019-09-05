@@ -7,13 +7,14 @@ import { DEAGreen } from '../../../config/colours.js'
 import popout from '../../../../images/popout.png'
 import popin from '../../../../images/popin.png'
 import { CSVLink } from 'react-csv'
+import { CustomFetch } from '../../../globalFunctions.js'
 
 
 // AntD
 import { Popover, Select, Button as ABtn } from 'antd'
-import { object } from 'prop-types';
-import { CustomFetch } from '../../../globalFunctions.js';
-const Option = Select.Option;
+import { object } from 'prop-types'
+
+const Option = Select.Option
 
 const _gf = require("../../../globalFunctions")
 const o = require("odata")
@@ -97,7 +98,7 @@ class ProjectList extends React.Component {
       title: "",
       message: "",
       ellipsisMenu: false,
-      sortOrder: "D_D",
+      sortOrder: "A_A",
       sortOrderChanged: false
     }
 
@@ -201,7 +202,7 @@ class ProjectList extends React.Component {
       let fetchURL = apiBaseURL + 'Projects/Extensions.ByPolygon'
 
       //Get project list data
-      CustomFetch(fetchURL,
+      customFetch(fetchURL,
         {
           method: "POST",
           headers: {
@@ -377,7 +378,7 @@ class ProjectList extends React.Component {
 
   render() {
 
-    let { user, daoid, favoritesFilter, unverifiedOnlyFilter } = this.props
+    let { user, daoid, favoritesFilter, unverifiedOnlyFilter, projectDetails } = this.props
     let { ellipsisMenu } = this.state
 
     const projComps = this.buildList()
@@ -389,6 +390,8 @@ class ProjectList extends React.Component {
       )
     }
 
+  
+
     return (
       <div style={{ backgroundColor: "white", padding: "10px", borderRadius: "10px", border: "1px solid gainsboro" }}>
 
@@ -398,29 +401,21 @@ class ProjectList extends React.Component {
 
         <div style={{ float: "right" }}>
 
-          <CSVLink
-            style={{
-              marginTop: 3,
-              marginRight: 30,
-              textDecoration: 'none',
-              color: 'white',
-              backgroundColor: DEAGreen,
-              padding: "9px 20px 8px 20px",
-              borderRadius: 2,
-              fontSize: 11,
-              border: "1px solid dimgrey",
-              fontWeight: 400
-            }}
-            filename={"projects-list.csv"}
-            data={[...this.props.projects]}
-            asyncOnClick={true}
-            onClick={() => {
-              console.log(this.props.projects)
-            }}
-          >
-            <MDBIcon icon="arrow-circle-down" style={{ marginRight: 15 }} />
-            Download
+          <Button size="sm" color="" style={{ backgroundColor: DEAGreen, marginRight: 30, marginTop: 3 }}>
+            <CSVLink
+              style={{ marginRight: '', textDecoration: 'none', color: 'white' }}
+              filename={"projects-list.csv"}
+              data={[...this.props.projects]}
+              asyncOnClick={true}
+              onClick={() => {
+                console.log(this.props.projects)
+              }}
+            >
+              {/* <Fa icon="arrow-circle-down" style={{ marginRight: 15 }} /> */}
+              <MDBIcon icon="arrow-circle-down" style={{ marginRight: 15 }} />
+              Download
             </CSVLink>
+          </Button>
 
           {
             (this.props.showListExpandCollapse === true) &&
@@ -626,6 +621,7 @@ class ProjectList extends React.Component {
             No Projects Found.
           </h5>
         }
+        
 
         <Modal isOpen={this.state.messageModal} toggle={this.toggle} centered>
           <ModalHeader toggle={this.toggle}>{this.state.title}</ModalHeader>
@@ -642,5 +638,6 @@ class ProjectList extends React.Component {
     )
   }
 }
+
 
 export default connect(mapStateToProps, mapDispatchToProps)(ProjectList)

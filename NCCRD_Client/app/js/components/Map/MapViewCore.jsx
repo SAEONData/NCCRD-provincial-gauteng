@@ -173,7 +173,7 @@ class MapViewCore extends React.Component {
 
     let { height, width, fullView } = this.props
     let mapConfig = this.buildMapConfig()
-    let mapSrc = `http://app01.saeon.ac.za/components/map?conf=${mapConfig}`
+    let mapSrc = `${mapServerBaseURL}?conf=${mapConfig}`
 
     if (!height) {
       height = "300px"
