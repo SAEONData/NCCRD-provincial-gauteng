@@ -1,7 +1,7 @@
 import { siteBaseURL } from '../js/config/serviceURLs.js'
 
 export const MapConfig = {
-    service: "http://app01.saeon.ac.za/nccrdtestapi/odata/projects/extensions.geojson",
+    service: "http://192.168.105.102/nccrd/api/odata/projects/extensions.geojson",
     domain: siteBaseURL,
     IDField: "properties.id",
     toolTipTitle: "properties.name",
@@ -25,21 +25,21 @@ export const MapConfig = {
             value: 1,
             title: "Mitigation",
             default: true,
-            icon: "http://app01.saeon.ac.za/dev/blue_2.png",
+            icon: "http://192.168.105.102/map/blue_2.png",
             anchorX: 0,
             anchorY: 8
         },
         {
             value: 2,
             title: "Adaptation",
-            icon: "http://app01.saeon.ac.za/dev/green.png",
+            icon: "http://192.168.105.102/map/green.png",
             anchorX: 0,
             anchorY: 8
         },
         {
             value: 3,
             title: "Research",
-            icon: "http://app01.saeon.ac.za/dev/red.png",
+            icon: "http://192.168.105.102/map/red.png",
             anchorX: 0,
             anchorY: 8
         }

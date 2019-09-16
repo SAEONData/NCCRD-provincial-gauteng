@@ -10,20 +10,20 @@ let _mapServerBaseURL = ''
 
 
 if (CONSTANTS.DEV) {
-  _apiBaseURL = 'http://192.168.105.102/nccrd/api/odata';
+  _apiBaseURL = 'http://app01/nccrdtestapi/odata/';
   _siteBaseURL = 'http://192.168.105.102/nccrd/';
-  _ndmcBaseURL = 'http://192.168.105.102/nhe';
-  _ndaoBaseURL = 'http://192.168.105.102/ndao/api/odata';
+  _ndmcBaseURL = 'http://192.168.105.102/nhe/';
+  _ndaoBaseURL = 'http://192.168.105.102/ndao/api/odata/';
   _ndaoSiteBaseURL = 'http://192.168.105.102/ndao/';
   _vmsBaseURL = 'http://192.168.105.102/vms/api/';
   _ssoBaseURL = 'https://identity.saeon.ac.za/';
   _mapServerBaseURL = 'http://192.168.105.102/map';
 }
 else if (CONSTANTS.TEST) {
-  _apiBaseURL = 'http://192.168.105.102/nccrd/api/odata';
+  _apiBaseURL = 'http://192.168.105.102/nccrd/api/odata/';
   _siteBaseURL = 'http://192.168.105.102/nccrd/';
-  _ndmcBaseURL = 'http://192.168.105.102/nhe';
-  _ndaoBaseURL = 'http://192.168.105.102/ndao/api/odata';
+  _ndmcBaseURL = 'http://192.168.105.102/nhe/';
+  _ndaoBaseURL = 'http://192.168.105.102/ndao/api/odata/';
   _ndaoSiteBaseURL = 'http://192.168.105.102/ndao/';
   _vmsBaseURL = 'http://192.168.105.102/vms/api/';
   _ssoBaseURL = 'https://identity.saeon.ac.za/';
