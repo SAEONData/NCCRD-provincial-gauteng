@@ -1,7 +1,7 @@
 import { siteBaseURL } from '../js/config/serviceURLs.js'
 
 export const MapConfig = {
-    service: "http://192.168.105.102/nccrd/api/odata/projects/extensions.geojson",
+    service: "https://ccis.environment.gov.za/nccrd/api/odata/projects/extensions.geojson",
     domain: siteBaseURL,
     IDField: "properties.id",
     toolTipTitle: "properties.name",
@@ -25,21 +25,21 @@ export const MapConfig = {
             value: 1,
             title: "Mitigation",
             default: true,
-            icon: "http://192.168.105.102/map/blue_2.png",
+            icon: "https://ccis.environment.gov.za/map/blue_2.png",
             anchorX: 0,
             anchorY: 8
         },
         {
             value: 2,
             title: "Adaptation",
-            icon: "http://192.168.105.102/map/green.png",
+            icon: "https://ccis.environment.gov.za/map/green.png",
             anchorX: 0,
             anchorY: 8
         },
         {
             value: 3,
             title: "Research",
-            icon: "http://192.168.105.102/map/red.png",
+            icon: "https://ccis.environment.gov.za/map/red.png",
             anchorX: 0,
             anchorY: 8
         }

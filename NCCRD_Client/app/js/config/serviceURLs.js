@@ -10,7 +10,7 @@ let _mapServerBaseURL = ''
 
 
 if (CONSTANTS.DEV) {
-  _apiBaseURL = 'http://app01/nccrdtestapi/odata/';
+  _apiBaseURL = 'http://192.168.105.102/nccrd/api/odata/';
   _siteBaseURL = 'http://192.168.105.102/nccrd/';
   _ndmcBaseURL = 'http://192.168.105.102/nhe/';
   _ndaoBaseURL = 'http://192.168.105.102/ndao/api/odata/';
