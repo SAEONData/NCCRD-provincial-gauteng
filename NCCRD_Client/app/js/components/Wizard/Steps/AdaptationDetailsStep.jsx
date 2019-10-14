@@ -147,8 +147,8 @@ class AdaptationDetailsStep extends React.Component {
             id="selAdaptationHazard"
             col="col-md-6"
             label="Hazard:"
-            placeholder="Coming Soon..."
-            disabled
+            placeholder="Select..."
+            // disabled
             selectedValue={undefined} //{details.HazardId}
             data={hazards}
             setSelectedValueKey={"SET_ADAPTATION_DETAILS_HAZARD"}
