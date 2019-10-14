@@ -366,7 +366,7 @@ class SteppedInputForm extends React.Component {
     steps.push({
       title: 'Review - Summary',
       content: <OverallSummaryStep
-        header={<h6><i>Please review before submitting</i></h6>}
+        header={<h6><i>Please review your entry before submitting. Once the project has been submitted, it will be reviewed by the Department of Environmental Affairs prior to being added to the database and any queries will be sent to the project manger details listed on page 4. If you would like proof of submission, please download your entry by selecting the 'Download' option above.</i></h6>}
         projectDetails={projectDetails}
         adaptationDetails={adaptationDetails}
         funderDetails={projectFunderDetails}
