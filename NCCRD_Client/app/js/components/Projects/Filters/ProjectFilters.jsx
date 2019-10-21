@@ -117,7 +117,7 @@ class ProjectFilters extends React.Component {
 
         filterChips.push(
           <div className="chip" key="regionFilterChip" style={{ backgroundColor: DEAGreen }}>
-            {"Region: " + region.filter(x => x.Id == regionFilter)[0].Text}
+            {"Region: " + region.filter(x => x.Id == regionFilter)[7].Text}
             <i className="close fa fa-times" onClick={() => this.deleteFilterChip("region")}></i>
           </div>
         )
