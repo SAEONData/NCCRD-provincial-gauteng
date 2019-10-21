@@ -11,7 +11,7 @@ let _mapServerBaseURL = ''
 
 if (CONSTANTS.DEV) {
   _apiBaseURL = 'http://192.168.105.102/nccrd/api/odata/'
-  _siteBaseURL = `${window.location.protocol}//${window.location.hostname}:${window.location.port}/`
+  _siteBaseURL = 'http://192.168.105.102/nccrd/' //${window.location.protocol}//${window.location.hostname}:${window.location.port}/`
   _ndmcBaseURL = 'http://192.168.105.102/nhe/'
   _ndaoBaseURL = 'http://192.168.105.102/ndao/api/odata/'
   _ndaoSiteBaseURL = 'http://192.168.105.102/ndao/'

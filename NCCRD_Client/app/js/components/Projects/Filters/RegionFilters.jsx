@@ -60,7 +60,7 @@ class RegionFilters extends React.Component {
         <TreeSelectComponent col="col-md-2"
           id="treeRegionFilter"
           label="Region"
-          selectedValue={regionFilter}
+          selectedValue={regionFilter=[7]}
           data={region}
           editModeOverride={true}
           labelStyle={{
