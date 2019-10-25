@@ -3,7 +3,7 @@ import { Col, Row, Container } from 'mdbreact';
 import { DEAGreen, DEAGreenDark } from '../../config/colours.js'
 
 //Images
-import environmental_affairs_logo from '../../../images/environmental_affairs_logo.png'
+import environmental_affairs_logo from '../../../images/gdard_logo.png'
 import sa_flag from '../../../images/sa_flag.jpg'
 
 class Header extends React.Component {
@@ -18,7 +18,7 @@ class Header extends React.Component {
         <Row className="align-items-center" style={{ /*marginBottom: "15px",*/ height: 100 }}>
           <Col md="2" className="d-none d-md-block">
             <img
-              onClick={() => window.open("http://www.environment.gov.za/")}
+              onClick={() => window.open("https://www.gauteng.gov.za/Departments/DepartmentDetails?departmentId=CPM-001000")}
               src={environmental_affairs_logo}
               style={{
                 height: 80,
@@ -32,7 +32,7 @@ class Header extends React.Component {
           <Col md="6">
             <div>
               <h1 style={{ textAlign: "center", letterSpacing: "2px", color: "#2e7d32" }}>
-                <b>NCCRD</b>
+                <b>GCCRD</b>
 
                 {/* BETA tag */}
                 <sub style={{ fontSize: "18px", backgroundColor: "#78e26c", borderRadius: "5px", padding: "2px" }}>
@@ -42,7 +42,7 @@ class Header extends React.Component {
               </h1>
               <p></p>
               <h5 style={{ textAlign: "center", letterSpacing: "2px", marginTop: "-8px", color: "grey" }}>
-                <b>National Climate Change Response Database</b>
+                <b>Gauteng Climate Change Response Database</b>
               </h5>
             </div>
           </Col>
