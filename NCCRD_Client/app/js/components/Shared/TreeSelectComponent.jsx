@@ -151,7 +151,9 @@ class TreeSelectComponent extends React.Component {
 
         //Dispatch to store
         if (typeof setSelectedValueKey !== 'undefined') {
-          setSelectedValue(setSelectedValueKey, { value: selectedValue, id: parentId, state: editMode === true ? "modified" : "original" })
+          setSelectedValue(setSelectedValueKey, { 
+            value: selectedValue, id: parentId, state: editMode === true ? "modified" : "original" 
+          })
         }
       }
     }

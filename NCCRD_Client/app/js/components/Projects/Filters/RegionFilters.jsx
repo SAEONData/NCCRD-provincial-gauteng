@@ -30,7 +30,7 @@ class RegionFilters extends React.Component {
   async componentDidMount() {
 
     let { loadRegions, region } = this.props
-
+    
     if (region.length === 0) {
       //Get data
       try {
@@ -52,15 +52,15 @@ class RegionFilters extends React.Component {
   }
 
   render() {
-
+    
     let { region, regionFilter } = this.props
-
+    
     return (
       <>
         <TreeSelectComponent col="col-md-2"
           id="treeRegionFilter"
           label="Region"
-          selectedValue={regionFilter=[7]}
+          selectedValue={regionFilter}
           data={region}
           editModeOverride={true}
           labelStyle={{
@@ -73,6 +73,7 @@ class RegionFilters extends React.Component {
             marginBottom: "15px"
           }}
           setSelectedValueKey="LOAD_REGION_FILTER"
+          disabled
         />
       </>
     )

@@ -103,7 +103,7 @@ const store = createStore(
             titleFilterInternal: "",
             statusFilter: 0,
             typologyFilter: 0,
-            regionFilter: 0,
+            regionFilter: 7,
             sectorFilter: 0,
             hazardFilter: 0,
             polygonFilter: "",
