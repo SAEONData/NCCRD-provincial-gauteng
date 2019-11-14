@@ -14,6 +14,7 @@ class Header extends React.Component {
   render() {
 
     return (
+      <>
       <div style={{ backgroundColor: "white" }}>
         <Row className="align-items-center" style={{ /*marginBottom: "15px",*/ height: 100 }}>
           <Col md="2" className="d-none d-md-block">
@@ -40,10 +41,11 @@ class Header extends React.Component {
                 </sub>
 
               </h1>
-              <p></p>
+              
               <h5 style={{ textAlign: "center", letterSpacing: "2px", marginTop: "-8px", color: "grey" }}>
                 <b>Gauteng Climate Change Response Database</b>
               </h5>
+           
             </div>
           </Col>
           <Col md="1"/>
@@ -59,6 +61,15 @@ class Header extends React.Component {
           </Col>
         </Row>
       </div>
+       <section className="ea-content dark-grey-bg-2">
+       <div className="container-fluid">
+     
+       <b>Please note that you are accessing the Beta Version of GCCRD website, which is in the process of being tested before its official release in 2020. The sole purpose of this BETA Version is to conduct testing and obtain feedback.
+       Should you encounter any bugs, lack of functionality or other problems on the beta website, please <a href="https://ccis.environment.gov.za/support.html">submit a ticket.</a></b>
+      
+       </div>
+     </section>
+     </>
     )
   }
 }

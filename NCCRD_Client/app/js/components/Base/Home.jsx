@@ -29,6 +29,15 @@ class Home extends React.Component {
 
   render() {
     return (
+      <>
+            <section className="ea-content dark-grey-bg-2">
+        <div className="container-fluid">
+        <div className="text-white pt-4 pb-3">
+        <p>Please note that you are accessing the Beta Version of NCCIS website, which is in the process of being tested before its official release on March 2020. The sole purpose of this BETA Version is to conduct testing and obtain feedback.</p>
+        <p>Should you encounter any bugs, lack of functionality or other problems on the beta website, please <u className="supportToggle">submit a ticket here</u></p>
+        </div>
+        </div>
+      </section>
       <div>
         <Row style={{ marginLeft: "0px", marginRight: "0px", backgroundImage: `url(${backdrop})`, minHeight: "450px" }}>
           <Col md="12">
@@ -52,6 +61,7 @@ class Home extends React.Component {
           </Col>
         </Row>
       </div>
+      </>
     )
   }
 }
