@@ -68,6 +68,7 @@ class HazardFilters extends React.Component {
     return (
       <>
         <TreeSelectComponent
+          disabled
           col="col-md-2"
           id="treeHazardFilter"
           label="Hazard"
