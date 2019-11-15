@@ -32,7 +32,7 @@ const mapDispatchToProps = (dispatch) => {
     },
     clearRegionFilter: () => {
       dispatch({ type: "LOAD_REGION_FILTER", payload: 0 })
-      dispatch({ type: "SET_FILTERS_CHANGED", payload: true })
+      dispatch({ type: "SET_FILTERS_CHANGED", payload: false })
     },
     clearSectorFilter: () => {
       dispatch({ type: "LOAD_SECTOR_FILTER", payload: 0 })
@@ -182,7 +182,7 @@ class ProjectFilters extends React.Component {
         <h4 style={{ margin: "5px 5px 0px 19px", display: "inline-block" }}>
           <b>Current Filters</b>
         </h4>
-        <Button
+        {/* <Button
           size="sm"
           color="white"
           style={{
@@ -197,7 +197,7 @@ class ProjectFilters extends React.Component {
           onClick={() => { this.props.clearFilters("") }}
         >
           <Fa icon="trash-o" size="2x" style={{ color: DEAGreen }} />
-        </Button>
+        </Button> */}
 
         <hr />
 
