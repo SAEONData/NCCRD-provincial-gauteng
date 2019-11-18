@@ -5,7 +5,8 @@ import { routerReducer } from 'react-router-redux'
 import reducers from './reducers'
 import { loadUser } from 'redux-oidc'
 import userManager from './components/Authentication/userManager'
-import { reducer as oidcReducer } from 'redux-oidc';
+import { reducer as oidcReducer } from 'redux-oidc'
+import { custom, region } from '../js/custom/custom_config'
 
 const store = createStore(
     combineReducers({ oidc: oidcReducer, ...reducers, router: routerReducer }), {
@@ -103,7 +104,7 @@ const store = createStore(
             titleFilterInternal: "",
             statusFilter: 0,
             typologyFilter: 0,
-            regionFilter: 7,
+            regionFilter: custom.region,
             sectorFilter: 0,
             hazardFilter: 0,
             polygonFilter: "",
