@@ -3,7 +3,7 @@ import { Col, Row, Container } from 'mdbreact';
 import { DEAGreen, DEAGreenDark } from '../../config/colours.js'
 
 //Images
-import environmental_affairs_logo from '../../../images/gdard_logo.png'
+import logo from '../../custom/logo.png'
 import sa_flag from '../../../images/sa_flag.jpg'
 
 class Header extends React.Component {
@@ -20,7 +20,7 @@ class Header extends React.Component {
           <Col md="2" className="d-none d-md-block">
             <img
               onClick={() => window.open("https://www.gauteng.gov.za/Departments/DepartmentDetails?departmentId=CPM-001000")}
-              src={environmental_affairs_logo}
+              src={logo}
               style={{
                 height: 80,
                 marginLeft: 5,

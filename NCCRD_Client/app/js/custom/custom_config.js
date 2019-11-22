@@ -8,3 +8,4 @@ export const custom = {
     region: 7,
     logo : './logo.png'
 }
+
